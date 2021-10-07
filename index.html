@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario FCC</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1 id="title">Dejanos tus datos!</h1>
+				<p id="description">
+					Completá el formulario y nos contactaremos a la brevedad
+				</p>
+			</header>
+
+			<form id="survey-form">
+				<section class="item-form">
+					<label class="required" for="name">Nombre</label><br />
+					<input type="text" id="name" required />
+				</section>
+
+				<section class="item-form">
+					<label class="required" for="email">Email</label><br />
+					<input type="email" name="email" id="email" required />
+				</section>
+
+				<section class="item-form">
+					<label for="age">Edad</label><br />
+					<input type="number" name="age" id="age" min="1" />
+				</section>
+
+				<section class="item-form">
+					<p class="text-label required">¿Nos recomendarias con tus amigos?</p>
+					<label>
+						<input
+							type="radio"
+							name="recomendanos"
+							value="por-supuesto"
+							required
+						/>Por supuesto! </label
+					><br />
+					<label>
+						<input type="radio" name="recomendanos" value="tal-vez" />Puede ser </label
+					><br />
+					<label>
+						<input type="radio" name="recomendanos" value="ni-ahi" />Ni ahi
+					</label>
+				</section>
+
+				<section class="item-form">
+					<label class="required" for="gustos"
+						>¿Que es lo que mas te gusta de nosotros?</label
+					>
+					<select name="gustos" id="gustos" required>
+						<option value="cursos">Cursos</option>
+						<option value="desafios">Desafios</option>
+						<option value="proyectos">Proyectos</option>
+						<option value="comunidad">Comunidad</option>
+					</select>
+				</section>
+
+				<section class="item-form">
+					<p class="text-label required">
+						¿Que curso estas haciendo actualmente?
+					</p>
+					<label
+						><input
+							type="checkbox"
+							name="curso"
+							value="frontend"
+						/>Desarrollador Frontend</label
+					><br />
+					<label
+						><input type="checkbox" name="curso" value="backend" />Desarrollador
+						Backend</label
+					><br />
+					<label
+						><input type="checkbox" name="curso" value="data" />Analista de
+						Bases de datos</label
+					><br />
+					<label
+						><input
+							type="checkbox"
+							name="curso"
+							value="javascript"
+						/>Programador en JavaScript</label
+					><br />
+					<label
+						><input type="checkbox" name="curso" value="python" />Programador en
+						Python</label
+					>
+				</section>
+
+				<section class="item-form">
+					<label for="texto-adicional"
+						>Algo que nos quieras decir:<br />
+					</label>
+					<textarea
+						name="comentarios"
+						id="texto-adicional"
+						cols="30"
+						rows="10"
+					></textarea>
+				</section>
+				<section class="item-form">
+					<button type="submit" value="Enviar" id="enviar">Enviar!</button>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>
